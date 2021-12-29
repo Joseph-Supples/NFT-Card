@@ -12,6 +12,9 @@ html{
 body{
     background-color: var(--main-bg);
     font-family: 'Outfit',sans-serif;
+    display:grid; 
+    place-items:center;
+    min-height:100vh;
 
 }
 .name{
@@ -30,10 +33,7 @@ body{
     border-radius: 5%;
     padding: .5em;
     background-color: var(--card-bg);
-    display: block;
-    height: 40%;
-    width: 30%;
-    margin: auto;
+    max-width: 350px;
 
 }
 hr{
@@ -68,16 +68,15 @@ hr{
 .info-row{
     display: flex;
     flex-direction: row;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: .6em;
+    padding-right: .6em;
 }
 .info-container{
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    width: 40%;
-
+    width: 50%;
 }
 
 
@@ -85,6 +84,7 @@ hr{
 .info-container img{
     height: 50%;
 }
+
 
 .price-container{
     float: left;
@@ -94,12 +94,13 @@ hr{
 .price-container p{
     color: var(--cyan);
 }
-.info-container p{
-    margin-left: 1em;
-}
+
 .time-container{
-    margin-left: 20%;
+   padding-left: 2.5em;
     float: right;
+}
+
+.timeRemaining{
 }
 
 .author-container{
