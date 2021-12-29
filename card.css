@@ -1,0 +1,47 @@
+html{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line:  hsl(215, 32%, 27%);
+    --white:  hsl(0, 0%, 100%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+body{
+    background-color: var(--main-bg);
+    font-family: 'Outfit',sans-serif;
+
+}
+.card h2{
+    color: white;
+}
+.card{
+    background-color: var(--card-bg);
+    display: block;
+    height: 40%;
+    width: 20%;
+    margin: auto;
+
+}
+
+.container{
+    display: block;
+    max-width: 80%;
+    margin: auto;
+}
+
+.container img{
+    max-width: 100%;
+    margin: auto;
+}
+
+.card p{
+    color: var(--soft-blue);
+}
+
+.info-row{
+    display: flex;
+    flex-direction: row;
+}
