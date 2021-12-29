@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="card.css">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,19 +16,40 @@
   </style>
 </head>
 <body>
+  <div class="card">
+    <div class="container image">
+      <img src="images/image-equilibrium.jpg">
+    </div>
+    <a href="#" class="name">
+      Equilibrium #3429
+    </a>
 
-  Equilibrium #3429
+    <p>
+      Our Equilibrium collection promotes balance and calm.
+    </p>
+    <div class="info-row">
+      <div class="info-container price-container">
+        <img src="images/icon-ethereum.svg">
+        <p class="price">0.041 ETH</p>
+      </div>
+      <div class="info-container time-container">
+        <img src="images/icon-clock.svg">
+        <p class="timeRemaining">3 days left</p>
+      </div>
+    </div>
+    <hr class="line">
+      <div class="author-container">
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
+      <div class="profile-pic">
+        <img src="images/image-avatar.png">
+      </div>
+      <p>Creation of <a class="author-name" href="#">Jules Wyvern</a></p>
+      </div>
+  </div>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Joseph Supples</a>.
   </div>
 </body>
 </html>
