@@ -121,4 +121,5 @@ hr{
 }
 .author-container a{
     color: var(--white);
+    text-decoration: none;
 }
