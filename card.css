@@ -14,16 +14,35 @@ body{
     font-family: 'Outfit',sans-serif;
 
 }
-.card h2{
+.name{
+    display: block;
     color: white;
+    font-weight: 600;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: .75em;
+    margin-top: .75em;
+}
+.card a:hover{
+    color: var(--cyan);
 }
 .card{
+    border-radius: 5%;
+    padding: .5em;
     background-color: var(--card-bg);
     display: block;
     height: 40%;
-    width: 20%;
+    width: 30%;
     margin: auto;
 
+}
+hr{
+    background-color: var(--line);
+    width: 90%;
+    margin: auto;
+    height: 2px;
+    border-style:none;
+    
 }
 
 .container{
@@ -33,15 +52,73 @@ body{
 }
 
 .container img{
+    display: inline;
+    border-radius: 5%;
     max-width: 100%;
     margin: auto;
 }
 
+
 .card p{
     color: var(--soft-blue);
+    margin-left: 1em;
+    font-size: 18px;
 }
 
 .info-row{
     display: flex;
     flex-direction: row;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.info-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+
+}
+
+
+
+.info-container img{
+    height: 50%;
+}
+
+.price-container{
+    float: left;
+    
+}
+
+.price-container p{
+    color: var(--cyan);
+}
+.info-container p{
+    margin-left: 1em;
+}
+.time-container{
+    margin-left: 20%;
+    float: right;
+}
+
+.author-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.author-container img{
+    height: 4em;
+    margin-top: 1em;
+    margin-left: 3em;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.author-container p{
+    margin-right: 2em;
+}
+.author-container a{
+    color: var(--white);
 }
